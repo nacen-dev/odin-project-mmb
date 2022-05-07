@@ -35,3 +35,8 @@ html {
   padding: 0.625rem 1rem;
   border: 1px solid black;
 }
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
