@@ -6,6 +6,13 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <% for (let i = 0; i < messages.length; i++) { %>
+      <div>
+        <h3>User: <%= messages[i].user %></h3>
+        <p>Text: <%= messages[i].text %></p>
+        <p>Date added: <%= messages[i].added %></p>
+      </div>
+    <% } %>
+    <a href="/new" class="button">Add New Message</a>
   </body>
 </html>
